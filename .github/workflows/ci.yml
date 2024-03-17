@@ -253,6 +253,7 @@ jobs:
               BOARD=onecloud \
               BRANCH=${{ matrix.BRANCH }} \
               RELEASE=${{ matrix.RELEASE }} \
+              ENABLE_EXTENSIONS=ha \
               KERNEL_CONFIGURE=no \
               BUILD_MINIMAL=${{ matrix.TYPE == 'minimal' && 'yes' || 'no' }} \
               BUILD_DESKTOP=${{ matrix.TYPE == 'desktop' && 'yes' || 'no' }} \
